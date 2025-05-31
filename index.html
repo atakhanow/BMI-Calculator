@@ -15,10 +15,19 @@
         <input
           type="number"
           id="height"
-          placeholder="Bo'yingizni kiriting (cm)"
+          placeholder="Enter your height"
           step="0.01"
         />
-       
+        <div class="unit-selector">
+          <label>
+            <input type="radio" name="heightUnit" value="cm" checked />
+            Centimeters (cm)
+          </label>
+          <label>
+            <input type="radio" name="heightUnit" value="ft" />
+            Feet (ft)
+          </label>
+        </div>
       </div>
 
       <div class="input-group">
@@ -26,10 +35,19 @@
         <input
           type="number"
           id="weight"
-          placeholder="Vazningizni kiriting (kg)"
+          placeholder="Enter your weight"
           step="0.1"
         />
-      
+        <div class="unit-selector">
+          <label>
+            <input type="radio" name="weightUnit" value="kg" checked />
+            Kilograms (kg)
+          </label>
+          <label>
+            <input type="radio" name="weightUnit" value="lbs" />
+            Pounds (lbs)
+          </label>
+        </div>
       </div>
 
       <button class="calculate-btn" onclick="calculateBMI()">
